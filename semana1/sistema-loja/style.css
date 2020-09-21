@@ -1,0 +1,29 @@
+h1 {
+    color:blue;
+    background-color:yellow;
+
+}
+
+* {
+    text-align:center
+}
+
+h3 {
+    color: white;
+    background-color: yellowgreen;
+}
+h4 {
+    color: yellow;
+    background-color: tomato;
+}
+p {
+    color: red;
+ }
+
+.selecao{
+    padding: 50px;
+    
+ }
+ .selecao:hover {
+     color: saddlebrown;
+ }
