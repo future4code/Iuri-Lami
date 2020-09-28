@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;    
+}
+
+header {
+    background-color: #dae5e8;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    top: 0;
+}
+
+header section {
+    justify-self: center;
+    align-self: center;
+}
+
+nav li {
+    display: inline;
+    padding: 4em;   
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red
+}
+
+#logo {
+    height: 4em;
+}
+
+main section img {
+    width: 25vh;
+    height: 25vh;
+}
+
+main#inicio h3 {
+    text-align: center;
+    background-color: #dae5e8;
+}
+
+#sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5vh;
+    padding: 5vh;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    background-color: #dae5e8;
+    max-height: 15vh;
+    min-height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer#bug {
+    position: relative;
+}
+
+footer section{
+    justify-self: center;
+    align-self: center;
+}
+
+.redes-sociais {
+    height: 3em;
+}
+
+main {
+    text-align: center;
+}
+
+/* Exclusivo contato.html */
+
+.formulario {
+    padding: 1em;
+}
+
+#main-contato {
+    margin: 1em;
+}
+
+/* Exclusivo produtos.html */
+
+#main-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#main-produtos article {
+    border-style: double;
+    border-color: black;
+}
+
+/* responsivo para celular */
+
+@media (max-width: 400px) {
+    
+    header {
+        grid-template-columns: 1fr 1fr;
+        text-align: end;
+        padding-right: 1em;
+        
+    }
+
+    nav li {
+        padding: 0;   
+    }
+
+    #logo {
+        height: 6em;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    section article {
+        padding: 2em;
+    }
+
+    #main-produtos {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
