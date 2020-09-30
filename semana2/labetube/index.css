@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+    }
+
+header {
+    display: grid;
+    background-color: chartreuse;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 3em;
+         
+}
+form {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 1em;
+     
+}
+
+img {
+    height: 5em;
+    width: 5em;
+}
+video {
+    width: 50%;
+    height: 50%;
+
+}
+
+footer {
+    display: grid;
+    color:white;
+    background-color: black;
+    height: 3em;
+    align-content: center;
