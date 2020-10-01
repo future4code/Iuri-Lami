@@ -165,7 +165,7 @@
 
 
 // console.log("Vamos Jogar!!")
-// numeroUm = Math.floor(Math.random() * 100)
+// numeroUm = Math.floor((Math.random() * 100) + 1)
 // const tentativas = []
 // numeroDois = -100 
 // console.log(numeroUm) // para facilitar
