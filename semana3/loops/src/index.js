@@ -181,7 +181,7 @@
 // // Quando resolver o exercício, pare e faça a seguinte reflexão: foi fácil fazer esta alteração? O que você poderia ter feito 
 // // para que fosse mais fácil? Deixe comentários no seu código sobre esta reflexão.
 
-// // Sim foi facil alterar (apenas uma linha), mas chutar o número ficou difícil.
+// // Sim, foi realmente fácil alterar (apenas uma linha), mas chutar o número ficou difícil.
 
 
 
