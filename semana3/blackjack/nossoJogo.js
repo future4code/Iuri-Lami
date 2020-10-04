@@ -1,27 +1,24 @@
-/**
- * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
- * 
- * 
-    const carta = comprarCarta(); // Sorteia uma carta. Por exemplo, o rei de ouros
-    
-    console.log(carta.texto) // imprime o texto da carta. Exemplo: "K♦️" (indica "K" de ouros)
-    console.log(carta.valor) // imprime o valor da carta (um número). Exemplo: 10 (dado que "K" vale 10)
- * 
- * 
- * 
- */
 
-// 1 - Imprime uma mensagem no console "Bem vindo ao jogo de Blackjack!".
+// console.log("Bem vindo ao jogo de Blackjack!")
 
-console.log("Bem vindo ao jogo de Blackjack!")
+// if(confirm("Quer iniciar uma nova rodada?")) {
+//    const cartaUmUsuario = comprarCarta();
+//    const cartaDoisUsuario = comprarCarta();
+//    const pontuacaoUsuario = (cartaUmUsuario.valor+cartaDoisUsuario.valor)
+//    console.log("Usuário - cartas: "+cartaUmUsuario.texto+" "+cartaDoisUsuario.texto+" - pontuação "+(pontuacaoUsuario))
+  
+//    const cartaUmPC = comprarCarta();
+//    const cartaDoisPC = comprarCarta();
+//    const pontuacaoPC = (cartaUmPC.valor+cartaDoisPC.valor)
+//    console.log("Usuário - cartas: "+cartaUmPC.texto+" "+cartaDoisPC.texto+" - pontuação "+(pontuacaoPC))
 
-// 2 - Envia um confirm, perguntando ao usuário: "Quer iniciar uma nova rodada?"
-// 3 - Se o usuário responder cancel, imprime uma mensagem no console "O jogo acabou".
+//    if(pontuacaoUsuario>pontuacaoPC){console.log("O usuário ganhou!")}
+//    else if (pontuacaoPC>pontuacaoUsuario){console.log("O computador ganhou!")}
+//    else if (pontuacaoPC===pontuacaoUsuario){console.log("Empate!")}
+// } 
+// else {
+//    console.log("O jogo acabou")
+// }
 
-if(confirm("Quer iniciar uma nova rodada?")) {
-	// o jogo
-} else {
-   console.log("O jogo acabou")
-}
 
 
