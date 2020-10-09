@@ -76,3 +76,20 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// // 4. equilátero, isósceles ou escaleno.
+
+// let ladoA = Number(prompt(`Digite o tamanho do lado A`));
+// let ladoB = Number(prompt(`Digite o tamanho do lado B`));
+// let ladoC = Number(prompt(`Digite o tamanho do lado C`));
+
+// if( (ladoA === ladoB) && (ladoA === ladoC) && (ladoB === ladoC)){
+//     console.log(`É um triângulo equilátero`)
+// }
+// else if ((ladoA === ladoB) || (ladoA === ladoC) || (ladoB === ladoC)) {
+//     console.log(`É um triângulo isósceles`)
+// }
+// else {console.log(`É um triângulo escaleno`)}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+
