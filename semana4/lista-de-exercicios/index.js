@@ -6,3 +6,5 @@
 
 // 3. criados 3 array, um com numeros e outros dois vazios. O primeiro é analisado indice a indice, separando pares de impares e adicionando nos arrays 1 e 2. No fim impresso a quantidade todas de numeros dentro do primeiro array com função length e tambem tamanhos dos arrays originalmente vazios.
 
+// 4. criado um array de numeros e duas variaveis numero1 e numero2, é feito um for of para passar por todos numeros do array numeros substituindo as variaveis let. No final ira imprimir no console a variavel com o menor numero do array (-10) e o maior numero do array (283).
+
