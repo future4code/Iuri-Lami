@@ -53,12 +53,26 @@
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
-// 2. Para este exercício considere as seguintes variáveis:
-// a- FALSE
-// b- FALSE
+// 2.
+
+// A- FALSE
+// B- FALSE
 // C- TRUE
 // D- TRUE
 // E- TRUE
 
 // ----------------------------------------------------------------------------------------------------------------------------
+
+// // 3. 
+// // adicionei a quantidade 
+// const quantidadeDeNumerosPares = 5
+// let i = 0
+// // retirei o igual para trazer apenas o N solicitado.
+// while(i < quantidadeDeNumerosPares) {
+//   console.log(i*2)
+//   // adicionei um ao indice para evitar loop infinito.
+//   i++
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------
 
