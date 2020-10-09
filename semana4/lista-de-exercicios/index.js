@@ -120,3 +120,47 @@
 // if(numerosIguais) {console.log(`A diferença entre eles é 0`)}
 
 // -----------------------------------------------------------------------------------------------------------------------
+
+// Exercícios de Funções
+
+// 1. Escreva uma função que receba um array de números e imprima na tela o segundo maior e o segundo menor número. 
+// Em seguida, invoque essa função. (Não é permitido usar funções de ordenação de vetores.)
+
+// const array= [4,2,6,5,8,7,9,3,1];
+// let menorNumero = array[0]
+// let maiorNumero = array[0]
+// let segundoMenor = array[0]
+// let segundoMaior = array[0]
+
+// const segundosNumeros = (array) => {
+// for(let i of array) {
+//     if(menorNumero > i) {segundoMenor = menorNumero , menorNumero = i} 
+//         else if (segundoMenor > i) {segundoMenor = i}
+//     if(maiorNumero < i) {segundoMaior = maiorNumero , maiorNumero = i}
+//         else if (segundoMaior < i) {segundoMaior = i}
+//     console.log(menorNumero,segundoMenor,segundoMaior, maiorNumero)
+//     i++
+// }
+// // console.log(`O segundo maior número é: ${segundoMaior}`)
+// // console.log(`O primeiro maior número é: ${maiorNumero}`)
+// // console.log(`O segundo menor número é: ${segundoMenor}`)
+// // console.log(`O primeiro menor número é: ${menorNumero}`)
+// }
+
+// segundosNumeros(array)
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+// 2. Escreva uma função não nomeada que faça um alert("Hello Future4");. Em seguida, invoque essa função.
+
+// let helloFuture4 = () => {
+//     alert(`Hello Future4`);
+// }
+// helloFuture4()
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
