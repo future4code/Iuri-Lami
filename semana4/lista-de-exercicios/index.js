@@ -92,4 +92,31 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// // 5. 
 
+// const numeroUm = Number(prompt(`Digite um número`))
+// const numeroDois = Number(prompt(`Digite outro número`))
+
+// let numeroUmMaior = numeroUm>numeroDois
+// let resultadoUmMaior = numeroUm-numeroDois
+// let numeroDoisMaior = numeroUm<numeroDois
+// let resultadoDoisMaior = numeroDois-numeroUm
+// let numerosIguais = numeroUm===numeroDois
+
+// // i. indique qual é o maior,
+// if (numeroUmMaior) {console.log(`O maior número é ${numeroUm}!!`)}
+//     else if (numeroDoisMaior) {console.log(`O maior número é ${numeroDois}!!`)}
+//         else {console.log(`O dois números são iguais!!`)}
+
+// // ii. determine se eles são divisíveis um pelo outro (use o operador `%`)
+// if (numeroUm%numeroDois === 0) {console.log(`${numeroUm} é divisivél por ${numeroDois}`)}
+//     else {console.log(`${numeroUm} NÃO é divisivél por ${numeroDois}`)}
+// if (numeroDois%numeroUm === 0) {console.log(`${numeroDois} é divisivél por ${numeroUm}`)}
+//     else {console.log(`${numeroDois} NÃO é divisivél por ${numeroUm}`)}
+
+// // iii. determine a diferença entre eles (o resultado deve ser um número positivo sempre)
+// if(numeroUmMaior) {console.log(`A diferença entre eles é ${resultadoUmMaior}`)}
+// if(numeroDoisMaior) {console.log(`A diferença entre eles é ${resultadoDoisMaior}`)}
+// if(numerosIguais) {console.log(`A diferença entre eles é 0`)}
+
+// -----------------------------------------------------------------------------------------------------------------------
