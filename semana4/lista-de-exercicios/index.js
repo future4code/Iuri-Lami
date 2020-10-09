@@ -4,3 +4,5 @@
 
 // 2. a constante novoMontante e segundoMontante recebem dois parametros, o primeiro sendo o tipoDeInvestimento e o segundo o valor, as informaçoes vão para o função, que seara por tipo de inestimento utilizando swith, retornando valores diferentes para cada tipo, retornando valorAposInvestimento e sendo impresso com console.log(constantes).
 
+// 3. criados 3 array, um com numeros e outros dois vazios. O primeiro é analisado indice a indice, separando pares de impares e adicionando nos arrays 1 e 2. No fim impresso a quantidade todas de numeros dentro do primeiro array com função length e tambem tamanhos dos arrays originalmente vazios.
+
