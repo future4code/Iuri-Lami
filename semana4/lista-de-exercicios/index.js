@@ -160,7 +160,14 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// Exercícios de Objetos
 
+// 1. Explique com as suas palavras o que são e quando podemos/devemos utilizar arrays e objetos.
 
+// R: array é um conjunto de numeros ou strings ou até mesmo objetos. Objetos são um conjunto de dados sobre o mesmo elemento. 
+// Podemos usar ambos quando descrevemos uma tabela com mais de um atributo. exemplo nome+profissão. 
+// Devemos usar array para armazenar um numero grande de variaveis, e os objetos para um conjunto de informações.
+
+// --------------------------------------------------------------------------------------------------------------------------
 
 
