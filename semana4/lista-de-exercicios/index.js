@@ -195,3 +195,19 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// 4. Crie um objeto que represente uma pessoa qualquer, com as propriedades de `nome`, `idade`, `email` e `endereco`. 
+// Crie uma função chamada `anonimizarPessoa`, que deverá retornar um **novo** objeto com as mesmas propriedades, 
+// mas com a string `ANÔNIMO` no lugar do nome. O objeto original deve ser mantido com o nome da pessoa.
+
+// let pessoaQualquer = {
+//     nome: "Iuri" , idade: 33 , email: "iuri.lami@gmail.com" , endereço: "Florianopolis-SC"
+// }
+
+// function anonimizarPessoa(){ const pessoaAnonima = {...pessoaQualquer , nome: "ANÔNIMO"}
+//     return pessoaAnonima
+// }
+
+// console.log(anonimizarPessoa(pessoaQualquer))
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
