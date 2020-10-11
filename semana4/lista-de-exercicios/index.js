@@ -168,7 +168,7 @@
 // Podemos usar ambos quando descrevemos uma tabela com mais de um atributo. exemplo nome+profissão. 
 // Devemos usar array para armazenar um numero grande de variaveis, e os objetos para um conjunto de informações.
 
-// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // 2. Crie uma função chamada `criaRetangulo` que recebe como parâmetros dois lados (`lado1` e `lado2`) e retorna um objeto 
 // com 4 informações: largura (`lado1`), altura (`lado2`), perímetro (`2 * (lado1 + lado2)`) e área (`lado1 * lado2`).
@@ -181,11 +181,17 @@
 // retangulo = criarRetangulo(21,11)
 // console.log(retangulo)
 
-// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // 3. Crie um objeto para representar seu filme favorito. Ele deve ter as seguintes propriedades: título, ano, 
 // diretor e atores/atrizes (lista com pelo menos 2 atores/atrizes). Imprima na tela a seguinte string, baseada nos valores 
 // do objeto: `Venha assistir ao filme NOME DO FILME, de ANO, dirigido por DIRETOR e estrelado por ATOR 1, ATRIZ 2, ATOR n`. 
 // A lista de atores/atrizes deve ser impressa inteira, independente do tamanho da lista.
 
+// filmeFavorito = {
+//     título: "El Camino: A Breaking Bad Movie" , ano: "2019" , diretor: "Vince Gilligan" , atores: ("Aaron Paul e Jonathan Banks.")}
+
+// console.log(`Venha assistir ao filme ${filmeFavorito.título}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atores}`)
+
+// ---------------------------------------------------------------------------------------------------------------------------
 
