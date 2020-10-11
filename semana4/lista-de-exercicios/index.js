@@ -211,3 +211,34 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// Exercícios de Funções de array
+
+// Considere um array com o seguinte formato:
+
+// const cadastro = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// a) Faça uma função que retorne um **novo array** só com os adultos (pessoas com idade igual ou superior a 20)
+
+// const adultos = cadastro.filter((elemento, indice, array) => {
+//     return elemento.idade >= 20
+// }) 
+
+// console.log (adultos)
+
+// ----------------------------------------------------------
+
+// b) Faça uma função que retorne um **novo array** só com as crianças/adolescentes (pessoas com idade inferior a 20)
+
+// const menores = cadastro.filter((elemento, indice, array) => {
+//     return elemento.idade < 20
+// }) 
+
+// console.log (menores)
+
+// --------------------------------------------------------------------------------------------------------------------------
+
