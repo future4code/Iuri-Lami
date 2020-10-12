@@ -302,14 +302,14 @@
 // As filas são muito grandes e todas as pessoas de várias idades insistem entrar no brinquedo, mesmo sabendo que não podem. 
 // Considere, então, essas pessoas:
 
-    const pessoas = [
-    	{ nome: "Paula", idade: 12, altura: 1.8},
-    	{ nome: "João", idade: 20, altura: 1.3},
-    	{ nome: "Pedro", idade: 15, altura: 1.9},
-    	{ nome: "Luciano", idade: 22, altura: 1.8},
-    	{ nome: "Artur", idade: 10, altura: 1.2},
-    	{ nome: "Soter", idade: 70, altura: 1.9}
-    ]
+    // const pessoas = [
+    // 	{ nome: "Paula", idade: 12, altura: 1.8},
+    // 	{ nome: "João", idade: 20, altura: 1.3},
+    // 	{ nome: "Pedro", idade: 15, altura: 1.9},
+    // 	{ nome: "Luciano", idade: 22, altura: 1.8},
+    // 	{ nome: "Artur", idade: 10, altura: 1.2},
+    // 	{ nome: "Soter", idade: 70, altura: 1.9}
+    // ]
 
 // A regra para entrar na montanha russa do terror é: ter, no mínimo, 1.5m de altura; ser mais velho do que 14 anos 
 // e mais novo do que 60 anos.
@@ -384,24 +384,24 @@
 
 // 5. Agora, pediram para você ajudar a fazer uma funcionalidade de um banco digital. Antes de explicar a sua tarefa, 
 // você precisa entender como eles guardam as contas dos clientes. Basicamente, eles salvam o nome do clientes, o saldo total 
-// e uma lista contendo todas as compras realizadas pelo cliente. Veja abaixo:
+// // e uma lista contendo todas as compras realizadas pelo cliente. Veja abaixo:
 
-const contas = [
-    { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
-    { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
-    { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
-    { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
-    { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
-    { cliente: "Soter", saldoTotal: 1200, compras: [] }
-]
+// const contas = [
+//     { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+//     { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+//     { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+//     { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+//     { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+//     { cliente: "Soter", saldoTotal: 1200, compras: [] }
+// ]
 
-contas.forEach((conta, index, array) => {
-    let soma = 0
-    for (let compra of conta.compras) {
-        soma += compra
-    }
-    conta.saldoTotal -= soma
-})
-console.log(contas)
+// contas.forEach((conta, index, array) => {
+//     let soma = 0
+//     for (let compra of conta.compras) {
+//         soma += compra
+//     }
+//     conta.saldoTotal -= soma
+// })
+// console.log(contas)
 
 // ------------------------------------------------------------------------------------------------------------------------------
