@@ -242,3 +242,56 @@
 
 // --------------------------------------------------------------------------------------------------------------------------
 
+// 2. Em todos os itens deste exercício, você terá que escrever uma **função** cuja entrada seja um **array**. 
+// Para testes, considere: 
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// a) Escreva uma função que **retorne** um array com as entradas multiplicadas por 2. Isto é `[2, 4, 6, 8, 10, 12]`.
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// arrayMultiplicado = []
+// const multiplicaPor2 = (array) => {
+//         for (let elemento of array) {
+//             arrayMultiplicado.push(elemento*2)
+//         }
+//         return arrayMultiplicado
+//     }
+// console.log(multiplicaPor2(array))
+
+// -------------------------------------------------------------
+
+// b) Escreva uma função que **retorne** um array com as entradas multiplicadas por 3 e como strings. 
+// Isto é: `["3", "6", "9", "15", "18"]` 
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// arrayMultiplicado = []
+// const multiplicaPor3 = (array) => {
+//         for (let elemento of array) {
+//             arrayMultiplicado.push(String(elemento*3))
+//         }
+//         return arrayMultiplicado
+//     }
+// console.log(multiplicaPor3(array))
+
+// --------------------------------------------------------------
+
+// c) Escreva uma função que **retorne** um array de strings dizendo: "${número} é par/impar". 
+// Isto é: `["1 é impar", "2 é par", "3 é impar", "4 é par", "5 é impar", "6 é par"]`
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// arrayParImpar = []
+// const naoMultiplica = (array) => {
+//         for (let elemento of array) {
+//             if(elemento%2 === 0){
+//             arrayParImpar.push(`${elemento} é par`)}
+//             else {arrayParImpar.push(`${elemento} é impar`)}
+//         }
+//         return arrayParImpar
+//     }
+// console.log(naoMultiplica(array))
+
+// -----------------------------------------------------------------------------------------------------------------------
