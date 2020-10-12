@@ -345,40 +345,63 @@
 // 4. Você foi contratado por um escritório médico para gerar e-mails automáticos para seus clientes, lembrando-os de sua 
 // consulta marcada; ou avisa-los que foi cancelada. Considere, então, essas consultas:
     
-const consultas = [
-    { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
-    { nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
-    { nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
-    { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
-]
+// const consultas = [
+//     { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+//     { nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+//     { nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+//     { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
 
-consultas.forEach((consulta, idx, consultas) => {
-    if (consulta.genero === "masculino") {consulta.tratamento = "Sr." , consulta.lembrar = "lembrá-lo"}
-        else if (consulta.genero === "feminino") {consulta.tratamento = "Sra." , consulta.lembrar = "lembra-lá"}
-            else{"V." , "lembrar-se"}
-})
+// consultas.forEach((consulta, idx, consultas) => {
+//     if (consulta.genero === "masculino") {consulta.tratamento = "Sr." , consulta.lembrar = "lembrá-lo"}
+//         else if (consulta.genero === "feminino") {consulta.tratamento = "Sra." , consulta.lembrar = "lembra-lá"}
+//             else{"V." , "lembrar-se"}
+// })
 
-consultas.forEach((consulta, idx, consultas) => {
-    if (consulta.genero === "masculino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
-    ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
-    Por favor, acuse o recebimento deste e-mail.`}
-        else if (consulta.genero === "masculino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
-        ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode 
-        entrar em contato conosco para remarcá-la`}
-            else if (consulta.genero === "feminino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
-            ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
-            Por favor, acuse o recebimento deste e-mail.`}
-                else if (consulta.genero === "feminino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
-                ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, 
-                pode entrar em contato conosco para remarcá-la`}
-                    else{"Algo deu errado"}
-})
+// consultas.forEach((consulta, idx, consultas) => {
+//     if (consulta.genero === "masculino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
+//     ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
+//     Por favor, acuse o recebimento deste e-mail.`}
+//         else if (consulta.genero === "masculino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
+//         ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode 
+//         entrar em contato conosco para remarcá-la`}
+//             else if (consulta.genero === "feminino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
+//             ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
+//             Por favor, acuse o recebimento deste e-mail.`}
+//                 else if (consulta.genero === "feminino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
+//                 ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, 
+//                 pode entrar em contato conosco para remarcá-la`}
+//                     else{"Algo deu errado"}
+// })
 
-const arrayEmail = consultas.map((consulta, index , consultas) => {
-    return consulta.email
-})
+// const arrayEmail = consultas.map((consulta, index , consultas) => {
+//     return consulta.email
+// })
 
-console.log(arrayEmail)
+// console.log(arrayEmail)
 
 // -------------------------------------------------------------------------------------------------------------------------------
 
+// 5. Agora, pediram para você ajudar a fazer uma funcionalidade de um banco digital. Antes de explicar a sua tarefa, 
+// você precisa entender como eles guardam as contas dos clientes. Basicamente, eles salvam o nome do clientes, o saldo total 
+// e uma lista contendo todas as compras realizadas pelo cliente. Veja abaixo:
+
+const contas = [
+    { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+    { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+    { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+    { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+    { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+    { cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+contas.forEach((conta, index, array) => {
+    let soma = 0
+    for (let compra of conta.compras) {
+        soma += compra
+    }
+    conta.saldoTotal -= soma
+})
+console.log(contas)
+
+// ------------------------------------------------------------------------------------------------------------------------------
