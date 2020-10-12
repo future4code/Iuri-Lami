@@ -342,4 +342,43 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
+// 4. Você foi contratado por um escritório médico para gerar e-mails automáticos para seus clientes, lembrando-os de sua 
+// consulta marcada; ou avisa-los que foi cancelada. Considere, então, essas consultas:
+    
+const consultas = [
+    { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+    { nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+    { nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+    { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+consultas.forEach((consulta, idx, consultas) => {
+    if (consulta.genero === "masculino") {consulta.tratamento = "Sr." , consulta.lembrar = "lembrá-lo"}
+        else if (consulta.genero === "feminino") {consulta.tratamento = "Sra." , consulta.lembrar = "lembra-lá"}
+            else{"V." , "lembrar-se"}
+})
+
+consultas.forEach((consulta, idx, consultas) => {
+    if (consulta.genero === "masculino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
+    ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
+    Por favor, acuse o recebimento deste e-mail.`}
+        else if (consulta.genero === "masculino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
+        ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode 
+        entrar em contato conosco para remarcá-la`}
+            else if (consulta.genero === "feminino" && consulta.cancelada === false) {consulta.email = `Olá, ${consulta.tratamento} 
+            ${consulta.nome}. Estamos enviando esta mensagem para ${consulta.lembrar} da sua consulta no dia ${consulta.dataDaConsulta}. 
+            Por favor, acuse o recebimento deste e-mail.`}
+                else if (consulta.genero === "feminino" && consulta.cancelada === true) {consulta.email = `Olá, ${consulta.tratamento} 
+                ${consulta.nome}. Infelizmente, sua consulta marcada para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, 
+                pode entrar em contato conosco para remarcá-la`}
+                    else{"Algo deu errado"}
+})
+
+const arrayEmail = consultas.map((consulta, index , consultas) => {
+    return consulta.email
+})
+
+console.log(arrayEmail)
+
+// -------------------------------------------------------------------------------------------------------------------------------
 
