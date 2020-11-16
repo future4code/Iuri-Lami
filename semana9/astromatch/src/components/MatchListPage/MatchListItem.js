@@ -6,12 +6,16 @@ const ListItemContainer = styled.div`
     align-items: center;
     border-bottom: 1px solid gray;
 `   
+const Avatar = styled.img`
+    height: 30px;
+    width: 30px;
+`
 
-function MatchListItem() {
+function MatchListItem(props) {
     return(
         <ListItemContainer>
-            <img src={'https://picsum.photos/21/21'}/>
-            <p>Nome</p>
+            <Avatar src={props.profile.photo}/>
+            <p>{props.profile.name}</p>
         </ListItemContainer>
     )
 

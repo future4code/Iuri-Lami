@@ -15,13 +15,13 @@ const ProfilePicture = styled.img`
 `
 
 
-function ProfileCard() {
+function ProfileCard(props) {    
     return(
         <ProfileCardContainer>
-            <ProfilePicture src={'https://picsum.photos/300/300'}/>
+            <ProfilePicture src={props.profile.photo}/>
             <ProfileInfo>
-                <p>Nome, Idade</p>
-                <p>Descrição</p>
+                <p>{props.profile.name}, {props.profile.age}</p>
+                <p>{props.profile.bio}</p>
             </ProfileInfo>
         </ProfileCardContainer>
     )
