@@ -1,3 +1,4 @@
+import Axios from 'axios'
 import React from  'react'
 import styled from 'styled-components'
 
@@ -6,11 +7,12 @@ const ButtonContainer = styled.div`
     justify-content: space-between;
 `
 
-function ChooseButton() {
+function ChooseButton(props) {
+
     return(
         <ButtonContainer>
-            <button>Não</button>
-            <button>Sim</button>
+            <button onClick={props.onClickNo}>Não</button>
+            <button onClick={props.onClickYes}>Sim</button>
         </ButtonContainer>
     )
 

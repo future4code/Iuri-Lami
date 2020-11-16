@@ -11,8 +11,8 @@ function MatchListPage() {
     const [matches, setMatches] = useState([])
 
     useEffect(() => {
-        axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/iuri-lami/matches').then(response => {
-            console.log(response.data.matches)
+        axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/iuri-lami/matches')
+        .then(response => { setMatches(response.data.matches)
         })
     },[]);
     
@@ -20,7 +20,8 @@ function MatchListPage() {
         <ListContainer>
             {matches.map((profile) => {
                 return <MatchListItem profile={profile}/>
-            })}            
+            }
+            )}            
         </ListContainer>
     )
 
