@@ -12,5 +12,8 @@ lista de respostas
     password VARCHAR(255) NOT NULL
 );
 
-2c. 
+2c. './src/data/createUser'
+
+3a. define que o valor retornado será de fato uma string e não undefined.
+
 
